@@ -1,13 +1,184 @@
+body {
+  font-family: 'Roboto';
+  font-weight: normal;
+  font-style: normal;
+  color: #212121;
+  background: white;
+}
 .visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
     
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+
+  /*---------- Header ----------------- */
+.header-logo {
+  font-family:'Raleway';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #000000;
+  text-decoration: none;
+}
+
+.web-logo {
+  color: #2196F3;
+}
+
+.nav-list > li {
+  list-style: none;
+}
+
+.nav-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
+  color: #212121;
+}
+
+.nav-list a:hover, 
+.nav-list a:focus {
+  color: #2196F3;
+}
+
+.contacts-list > li {
+  list-style: none;
+}
+
+.contacts-list a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1;
+  text-decoration: none;
+  color: #757575;
+}
+
+.contacts-list a:hover,
+.contacts-list a:focus {
+  color: #2196F3;
+}
+  
+  /*---------- Hero section ------------ */
+.hero-section {
+  background: #2F303A;
+}
+.hero-section > h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.4;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.hero-section > button {
+  font-family: 'Roboto';
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.9;
+  color: #FFFFFF;
+  background-color:#2196F3;
+  cursor: pointer;
+}
+
+  /*---------- Details ------------------- */
+.details-list > li {
+  list-style: none;
+}
+
+.details-list h3 {
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.details-list p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #757575;
+}
+
+   /*---------- What we're doing ---------- */
+.occupation-list > li {
+  list-style: none;
+}
+
+.occupation > h2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.2;
+}
+
+
+    /*---------- Our Team --------------- */
+.team-section {
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+.team-section h2 {
+  font-weight: bold;
+  font-size: 36px;
+}
+
+.team-section-list > li {
+  list-style: none;
+}
+
+.team-section-list h3 {
+  font-weight: 500;
+}
+
+.team-section-list p {
+  color: #757575;
+}
+
+
+   /*---------- Footer --------------- */
+.footer {
+  background-color: #2F303A;
+}
+
+.footer-logo {
+  font-family: 'Raleway';
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+.address-list {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.address-list > li {
+  list-style: none; 
+}
+
+.address-list-item-link > a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.address-list-item-contact > a {
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+}
+
+.address-list a:hover,
+.address-list a:focus {
+  color: #2196F3;
+}
+
