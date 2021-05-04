@@ -2,6 +2,7 @@
 --primary-text-color: #757575;
 --title-text-color: #212121;
 --accent-color: #2196F3;
+--primary-white-color: #FFFFFF;
 
 }
 body {
@@ -9,7 +10,7 @@ body {
   font-weight: normal;
   font-style: normal;
   color: var(--primary-text-color);
-  background: white;
+  background: var(--primary-white-color);
 }
 
 .visually-hidden {
@@ -42,7 +43,7 @@ body {
 }
 
 .web-logo {
-  color: #2196F3;
+  color: var(--accent-color);
 }
 
 .nav-list a {
@@ -63,7 +64,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
-  color: #757575;
+  color: var(--primary-text-color);
 }
 
 .contacts-list a:hover,
@@ -81,7 +82,7 @@ body {
   font-size: 44px;
   line-height: 1.4;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: var(--primary-white-color);
 }
 
 .hero-section > button {
@@ -89,14 +90,19 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
-  color: #FFFFFF;
-  background-color:#2196F3;
+  color: var(--primary-white-color);
+  background-color: var(--accent-color);
   cursor: pointer;
+}
+.hero-section > button:hover,
+.hero-section > button:focus {
+  color: var(--accent-color);
+  background-color: var(--primary-white-color);
 }
 
   /*---------- Details ------------------- */
 
-.details-list h3 {
+.details-list .title {
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -124,12 +130,12 @@ body {
   line-height: 1.2;
 }
 
-.team-section h2 {
+.team-section > h2 {
   font-size: 36px;
   color: var(--title-text-color);
 }
 
-.team-section-list h3 {
+.team-section .title{
   font-weight: 500; 
   color: var(--title-text-color);
 }
@@ -145,7 +151,7 @@ body {
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
-  color: #FFFFFF;
+  color: var(--primary-white-color);
   text-decoration: none;
 }
 .address-list {
@@ -156,7 +162,7 @@ body {
 }
 
 .item-link > a {
-  color: #FFFFFF;
+  color: var(--primary-white-color);
   text-decoration: none;
 }
 
@@ -182,11 +188,11 @@ body {
 
 .projects-filters button:hover,
 .projects-filters button:focus {
-  background-color: #2196F3;
-  color: #FFFFFF;
+  background-color: var(--accent-color);
+  color: var(--primary-white-color);
 }
 
-.projects-card h2 {
+.projects-card .title {
   font-style: normal;
   font-size: 18px;
   line-height: 2.1;
