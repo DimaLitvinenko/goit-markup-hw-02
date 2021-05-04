@@ -5,6 +5,7 @@ body {
   color: #212121;
   background: white;
 }
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -12,15 +13,19 @@ body {
   margin: -1px;
   border: 0;
   padding: 0;
-    
   white-space: nowrap;
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
 
+.list > li{
+  list-style: none;
+}
+
 
   /*---------- Header ----------------- */
+
 .header-logo {
   font-family:'Raleway';
   font-weight: bold;
@@ -34,10 +39,6 @@ body {
   color: #2196F3;
 }
 
-.nav-list > li {
-  list-style: none;
-}
-
 .nav-list a {
   font-weight: 500;
   font-size: 14px;
@@ -49,10 +50,6 @@ body {
 .nav-list a:hover, 
 .nav-list a:focus {
   color: #2196F3;
-}
-
-.contacts-list > li {
-  list-style: none;
 }
 
 .contacts-list a {
@@ -69,6 +66,7 @@ body {
 }
   
   /*---------- Hero section ------------ */
+
 .hero-section {
   background: #2F303A;
 }
@@ -91,9 +89,6 @@ body {
 }
 
   /*---------- Details ------------------- */
-.details-list > li {
-  list-style: none;
-}
 
 .details-list h3 {
   font-size: 14px;
@@ -108,9 +103,6 @@ body {
 }
 
   /*---------- What we're doing ---------- */
-.occupation-list > li {
-  list-style: none;
-}
 
 .occupation > h2 {
   font-size: 36px;
@@ -119,6 +111,7 @@ body {
 
 
   /*---------- Our Team --------------- */
+
 .team-section {
   font-size: 16px;
   line-height: 1.2;
@@ -126,10 +119,6 @@ body {
 
 .team-section h2 {
   font-size: 36px;
-}
-
-.team-section-list > li {
-  list-style: none;
 }
 
 .team-section-list h3 {
@@ -142,6 +131,7 @@ body {
 
 
   /*---------- Footer --------------- */
+  
 .page-footer {
   background-color: #2F303A;
 }
@@ -159,9 +149,6 @@ body {
   font-weight: normal;
   font-size: 14px;
   line-height: 1.7;
-}
-.address-list > li {
-  list-style: none; 
 }
 
 .address-list-item-link > a {
@@ -181,10 +168,6 @@ body {
 
   /* ---------- Portfolio -----------*/
 
-.projects-filters-list > li {
-  list-style: none;
-}
-
 .projects-filters-list button {
   font-family:'Roboto';
   font-weight: 500;
@@ -197,10 +180,6 @@ body {
 .projects-filters-list button:focus {
   background-color: #2196F3;;
   color: #FFFFFF;
-}
-
-.projects-card-list > li {
-  list-style: none;
 }
 
 .projects-card-list h2 {
