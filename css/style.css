@@ -2,13 +2,14 @@
 --primary-text-color: #757575;
 --title-text-color: #212121;
 --accent-color: #2196F3;
---primary-white-color: #FFFFFF;
+--primary-white-color: #ffffff;
 
 }
 body {
-  font-family: 'Roboto';
+  font-family: Roboto, sans-serif;
   font-weight: normal;
   font-style: normal;
+  letter-spacing: 0.03em;
   color: var(--primary-text-color);
   background: var(--primary-white-color);
 }
@@ -34,7 +35,7 @@ body {
   /*---------- Header ----------------- */
 
 .header-logo {
-  font-family:'Raleway';
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
@@ -51,9 +52,12 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
-  color: #212121;
+  letter-spacing: 0.02em;
+  color: var(--title-text-color);
 }
-
+.nav-list .current {
+  color: var(--accent-color);
+}
 .nav-list a:hover, 
 .nav-list a:focus {
   color: var(--accent-color);
@@ -64,6 +68,7 @@ body {
   font-size: 14px;
   line-height: 1.1;
   text-decoration: none;
+  letter-spacing: 0.02em;
   color: var(--primary-text-color);
 }
 
@@ -81,15 +86,18 @@ body {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
+  text-align: center;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-white-color);
 }
 
 .hero-section > button {
-  font-family: 'Roboto';
+  font-family: inherit;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.9;
+  letter-spacing: 0.06em;
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -103,6 +111,7 @@ body {
   /*---------- Details ------------------- */
 
 .details-list .title {
+  font-weight: 700;
   font-size: 14px;
   line-height: 1.1;
   text-transform: uppercase;
@@ -117,27 +126,34 @@ body {
   /*---------- What we're doing ---------- */
 
 .occupation > h2 {
+  font-weight: 700;
   font-size: 36px;
   line-height: 1.2;
+  text-align: center;
   color: var(--title-text-color);
 }
 
 
   /*---------- Our Team --------------- */
 
-.team-section {
-  font-size: 16px;
-  line-height: 1.2;
-}
-
 .team-section > h2 {
+  font-weight: 700;
   font-size: 36px;
+  line-height: 1.2;
+  text-align: center;
   color: var(--title-text-color);
 }
 
 .team-section .title{
   font-weight: 500; 
+  font-size: 16px;
+  line-height: 1.2;
   color: var(--title-text-color);
+}
+
+.team-section .text {
+  font-size: 16px;
+  line-height: 1.2;
 }
 
   /*---------- Footer --------------- */
@@ -147,26 +163,26 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Raleway';
+  font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   color: var(--primary-white-color);
   text-decoration: none;
 }
-.address-list {
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 1.7;
-}
 
 .item-link > a {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
   color: var(--primary-white-color);
   text-decoration: none;
 }
 
 .item-contact > a {
+  font-size: 14px;
+  line-height: 1.7;
+  font-style: normal;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -179,7 +195,7 @@ body {
   /* ---------- Portfolio -----------*/
 
 .projects-filters button {
-  font-family:'Roboto';
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.6;
@@ -192,14 +208,21 @@ body {
   color: var(--primary-white-color);
 }
 
+.projects-card .link {
+  text-decoration: none;
+}
+
 .projects-card .title {
+  font-weight: 700;
   font-style: normal;
   font-size: 18px;
   line-height: 2.1;
+  letter-spacing: 0.06em;
   color: var(--title-text-color);
 }
 
-.projects-card p {
+.projects-card .text {
   font-size: 16px;
   line-height: 1.9;
+  color: var(--primary-text-color);
 }
